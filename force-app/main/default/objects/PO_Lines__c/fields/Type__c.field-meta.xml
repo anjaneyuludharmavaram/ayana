@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Allocation Account</fullName>
+                <default>false</default>
+                <label>Allocation Account</label>
+            </value>
+            <value>
+                <fullName>Charge (Item)</fullName>
+                <default>false</default>
+                <label>Charge (Item)</label>
+            </value>
+            <value>
+                <fullName>Comment</fullName>
+                <default>false</default>
+                <label>Comment</label>
+            </value>
+            <value>
+                <fullName>Fixed Asset</fullName>
+                <default>false</default>
+                <label>Fixed Asset</label>
+            </value>
+            <value>
+                <fullName>G/L Account</fullName>
+                <default>false</default>
+                <label>G/L Account</label>
+            </value>
+            <value>
+                <fullName>Item,Resource</fullName>
+                <default>false</default>
+                <label>Item,Resource</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
