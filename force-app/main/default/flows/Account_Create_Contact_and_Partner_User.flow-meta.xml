@@ -4,8 +4,8 @@
     <decisions>
         <name>Check_if_the_Record_Type_is_Vendor_or_Company</name>
         <label>Check if the Record Type is Vendor or Company</label>
-        <locationX>314</locationX>
-        <locationY>323</locationY>
+        <locationX>536</locationX>
+        <locationY>371</locationY>
         <defaultConnectorLabel>No it&apos;s Company</defaultConnectorLabel>
         <rules>
             <name>yes_it_is_Vendor</name>
@@ -45,7 +45,7 @@
     <processMetadataValues>
         <name>CanvasMode</name>
         <value>
-            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
         </value>
     </processMetadataValues>
     <processMetadataValues>
@@ -58,8 +58,8 @@
     <recordCreates>
         <name>Create_Contact</name>
         <label>Create Contact</label>
-        <locationX>50</locationX>
-        <locationY>431</locationY>
+        <locationX>272</locationX>
+        <locationY>479</locationY>
         <connector>
             <targetReference>Get_Partner_Community_Profile</targetReference>
         </connector>
@@ -99,8 +99,8 @@
     <recordCreates>
         <name>Create_Partner_User</name>
         <label>Create Partner User</label>
-        <locationX>50</locationX>
-        <locationY>647</locationY>
+        <locationX>272</locationX>
+        <locationY>695</locationY>
         <faultConnector>
             <targetReference>Error</targetReference>
         </faultConnector>
@@ -170,8 +170,8 @@
     <recordLookups>
         <name>Get_Partner_Community_Profile</name>
         <label>Get Partner Community Profile</label>
-        <locationX>50</locationX>
-        <locationY>539</locationY>
+        <locationX>272</locationX>
+        <locationY>587</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Create_Partner_User</targetReference>
@@ -189,14 +189,22 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
-        <locationX>188</locationX>
-        <locationY>0</locationY>
+        <locationX>410</locationX>
+        <locationY>48</locationY>
         <connector>
             <targetReference>Check_if_the_Record_Type_is_Vendor_or_Company</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Record_Type_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Vendor</stringValue>
+            </value>
+        </filters>
         <object>Account</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>

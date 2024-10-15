@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Raise_Invoice</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Raise Invoice</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/lightning/o/Purchase_Order_Invoice__c/new?defaultFieldValues=PO_Amount__c={!Purchase_Order_Line__c.Amount__c},Quantity__c={!Purchase_Order_Line__c.Quantity__c},Purchase_Order__c={!Purchase_Order_Line__c.PO_HeaderId__c},Purchase_Order_Line__c={!Purchase_Order_Line__c.Id}</url>
+</WebLink>

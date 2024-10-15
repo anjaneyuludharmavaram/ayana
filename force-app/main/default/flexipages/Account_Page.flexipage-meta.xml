@@ -193,6 +193,36 @@
                 <identifier>RecordType_of_Account__cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Payment_Terms_Code__c</fieldItem>
+                <identifier>RecordPayment_Terms_Code__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Payment_Method_Code__c</fieldItem>
+                <identifier>RecordPayment_Method_Code__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Assessee_Code__c</fieldItem>
+                <identifier>RecordAssessee_Code__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.State_Code__c</fieldItem>
+                <identifier>RecordState_Code__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Master_Account__c</fieldItem>
+                <identifier>RecordMaster_Account__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-e3c2a936-3960-434d-ba55-e5cf78ff8397</name>
         <type>Facet</type>
     </flexiPageRegions>

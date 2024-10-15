@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>P_A_N_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>P.A.N. Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PAN APPLIED</fullName>
+                <default>false</default>
+                <label>PAN APPLIED</label>
+            </value>
+            <value>
+                <fullName>PANNOTAVBL</fullName>
+                <default>false</default>
+                <label>PANNOTAVBL</label>
+            </value>
+            <value>
+                <fullName>PANINVALID</fullName>
+                <default>false</default>
+                <label>PANINVALID</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

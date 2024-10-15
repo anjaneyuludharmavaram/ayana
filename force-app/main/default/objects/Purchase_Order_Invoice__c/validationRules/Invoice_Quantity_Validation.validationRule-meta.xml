@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Quantity_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>Quantity__c &gt; Purchase_Order_Line__r.Quantity__c</errorConditionFormula>
+    <errorMessage>Invoice Quantity cannot exceed the Purchase Order Line Quantity.</errorMessage>
+</ValidationRule>

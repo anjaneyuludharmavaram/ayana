@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PO_Line_Outstanding_Quantity_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>Purchase_Order_Line__r.Outstanding_Quantity__c &lt;&gt; 0</errorConditionFormula>
+    <errorMessage>PO Line Outstanding Quantity is not 0</errorMessage>
+</ValidationRule>
