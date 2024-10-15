@@ -1,0 +1,10 @@
+<template>
+    <c-related-list 
+    record-id={recordId}
+    sobject-api-name="Account"
+    related-field-api-name="ParentId"
+    sorted-by="Name"
+    fields="Name,Responsibility_centre_Name__c,Responsibility_centre_Code__c,State_Code__c"
+    columns={companyColumns}>
+</c-related-list>
+</template>

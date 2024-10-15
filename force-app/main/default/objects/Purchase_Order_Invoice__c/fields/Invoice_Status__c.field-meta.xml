@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Invoice Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Pending Approval</fullName>
+                <default>false</default>
+                <label>Pending Approval</label>
+            </value>
+            <value>
+                <fullName>SRN Generated</fullName>
+                <default>false</default>
+                <label>SRN Generated</label>
+            </value>
+            <value>
+                <fullName>GRN Generated</fullName>
+                <default>false</default>
+                <label>GRN Generated</label>
+            </value>
+            <value>
+                <fullName>UTR Generated</fullName>
+                <default>false</default>
+                <label>UTR Generated</label>
+            </value>
+            <value>
+                <fullName>Invoice Generated</fullName>
+                <default>false</default>
+                <label>Invoice Generated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -31,6 +31,26 @@
                 <behavior>Edit</behavior>
                 <field>Type_of_Account__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Payment_Terms_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Payment_Method_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Assessee_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>State_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Master_Account__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -70,11 +90,13 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>SRN_Header__c.Vendor__c</relatedList>
+        <fields>Responsibility_Center__c</fields>
+        <fields>State__c</fields>
+        <relatedList>Purchase_Order__c.Company__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>PO_Header__c.Vendor__c</relatedList>
+        <relatedList>Purchase_Order_Invoice__c.Vendor__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

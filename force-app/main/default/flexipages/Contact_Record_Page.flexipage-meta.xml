@@ -30,6 +30,9 @@
                         <valueListItems>
                             <value>LoginToNetworkAsUser</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>DisablePartnerPortal</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>

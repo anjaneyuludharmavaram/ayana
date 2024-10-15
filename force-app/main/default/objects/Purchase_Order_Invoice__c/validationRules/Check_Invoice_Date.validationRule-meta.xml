@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Invoice_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>Purchase_Order__r.Order_Date__c &gt;  Invoice_Date__c</errorConditionFormula>
+    <errorDisplayField>Invoice_Date__c</errorDisplayField>
+    <errorMessage>Invoice Date should be later than the Purchase Order&apos;s Order Date.</errorMessage>
+</ValidationRule>
